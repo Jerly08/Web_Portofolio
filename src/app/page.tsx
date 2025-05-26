@@ -257,7 +257,7 @@ export default function Home() {
                           <h3 className="text-xl font-bold mb-3">Education</h3>
                           <div className="glass-card p-4 rounded-xl">
                             <h4 className="font-semibold">Bachelor of Computer Science</h4>
-                            <p className="text-sm text-slate-500 dark:text-slate-400">University of Technology</p>
+                            <p className="text-sm text-slate-500 dark:text-slate-400">University Sam Ratulangi</p>
                             <p className="text-sm text-slate-600 dark:text-slate-300 mt-1">Graduated with honors, focusing on software engineering and web technologies.</p>
                           </div>
                         </div>
@@ -326,31 +326,98 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h2 className="section-heading gradient-text">Featured Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto stagger-children">
+            {/* Personal Finance Tracker Project */}
             <div className="project-card glass-card-hover">
               <div className="relative h-full w-full overflow-hidden rounded-2xl">
-                <div className="absolute inset-0 bg-gradient-to-r from-sky-500 to-indigo-500 opacity-20"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-500 opacity-20"></div>
                 <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-20 bg-center mix-blend-overlay"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent"></div>
                 <div className="relative h-full flex flex-col justify-between p-6 text-white">
                   <div className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-lg flex items-center justify-center mb-4">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
                   <div className="mt-auto">
-                    <span className="px-3 py-1 rounded-full bg-sky-500/20 backdrop-blur-md text-xs font-medium text-sky-300 inline-block mb-2">Enterprise Solution</span>
-                    <h3 className="text-xl font-bold mb-2">Business Management Platform</h3>
-                    <p className="text-gray-300 mb-4 line-clamp-2">Full-stack enterprise application with microservices architecture, real-time data processing, and advanced analytics.</p>
+                    <span className="px-3 py-1 rounded-full bg-green-500/20 backdrop-blur-md text-xs font-medium text-green-300 inline-block mb-2">Finance Application</span>
+                    <h3 className="text-xl font-bold mb-2">Personal Finance Tracker</h3>
+                    <p className="text-gray-300 mb-4 line-clamp-2">A responsive web application that helps users track income, expenses, and manage budgets with clean data visualization and category filtering.</p>
                     <div className="flex flex-wrap gap-2 mb-4">
-                      <span className="px-2 py-1 rounded-full bg-white/10 text-xs">React</span>
-                      <span className="px-2 py-1 rounded-full bg-white/10 text-xs">Node.js</span>
-                      <span className="px-2 py-1 rounded-full bg-white/10 text-xs">PostgreSQL</span>
-                      <span className="px-2 py-1 rounded-full bg-white/10 text-xs">Docker</span>
+                      <span className="px-2 py-1 rounded-full bg-white/10 text-xs">Next.js</span>
+                      <span className="px-2 py-1 rounded-full bg-white/10 text-xs">Tailwind CSS</span>
+                      <span className="px-2 py-1 rounded-full bg-white/10 text-xs">LocalStorage</span>
+                      <span className="px-2 py-1 rounded-full bg-white/10 text-xs">JavaScript</span>
                     </div>
-                    <a href="#" className="text-sky-300 hover:text-sky-200 font-medium flex items-center gap-1 text-sm">
-                      View Details
+                    <a href="https://personal-finance-tracker-gamma-six.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-green-300 hover:text-green-200 font-medium flex items-center gap-1 text-sm">
+                      View Live Demo
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* MarketHub E-commerce Project */}
+            <div className="project-card glass-card-hover">
+              <div className="relative h-full w-full overflow-hidden rounded-2xl">
+                <div className="absolute inset-0 bg-gradient-to-r from-amber-500 to-orange-500 opacity-20"></div>
+                <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-20 bg-center mix-blend-overlay"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent"></div>
+                <div className="relative h-full flex flex-col justify-between p-6 text-white">
+                  <div className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-lg flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                    </svg>
+                  </div>
+                  <div className="mt-auto">
+                    <span className="px-3 py-1 rounded-full bg-amber-500/20 backdrop-blur-md text-xs font-medium text-amber-300 inline-block mb-2">E-Commerce Platform</span>
+                    <h3 className="text-xl font-bold mb-2">MarketHub</h3>
+                    <p className="text-gray-300 mb-4 line-clamp-2">A modern e-commerce platform with product categories, featured items, and exclusive deals. Browse products across multiple categories with detailed listings.</p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="px-2 py-1 rounded-full bg-white/10 text-xs">Next.js</span>
+                      <span className="px-2 py-1 rounded-full bg-white/10 text-xs">TypeScript</span>
+                      <span className="px-2 py-1 rounded-full bg-white/10 text-xs">Tailwind CSS</span>
+                      <span className="px-2 py-1 rounded-full bg-white/10 text-xs">Vercel</span>
+                    </div>
+                    <a href="https://marketplace-hub.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-amber-300 hover:text-amber-200 font-medium flex items-center gap-1 text-sm">
+                      View Live Demo
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* KOMIT B Government Initiative Project */}
+            <div className="project-card glass-card-hover">
+              <div className="relative h-full w-full overflow-hidden rounded-2xl">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 opacity-20"></div>
+                <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-20 bg-center mix-blend-overlay"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent"></div>
+                <div className="relative h-full flex flex-col justify-between p-6 text-white">
+                  <div className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-lg flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                  </div>
+                  <div className="mt-auto">
+                    <span className="px-3 py-1 rounded-full bg-blue-500/20 backdrop-blur-md text-xs font-medium text-blue-300 inline-block mb-2">Government Initiative</span>
+                    <h3 className="text-xl font-bold mb-2">KOMIT B</h3>
+                    <p className="text-gray-300 mb-4 line-clamp-2">Official platform for Bekasi's IT human resource development initiative, providing training programs, digital literacy, startup incubation, and smart city solutions.</p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="px-2 py-1 rounded-full bg-white/10 text-xs">Next.js</span>
+                      <span className="px-2 py-1 rounded-full bg-white/10 text-xs">TypeScript</span>
+                      <span className="px-2 py-1 rounded-full bg-white/10 text-xs">Tailwind CSS</span>
+                      <span className="px-2 py-1 rounded-full bg-white/10 text-xs">Vercel</span>
+                    </div>
+                    <a href="https://bkomit.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-200 font-medium flex items-center gap-1 text-sm">
+                      View Live Demo
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                       </svg>
                     </a>
                   </div>
@@ -429,56 +496,10 @@ export default function Home() {
       <section id="contact" className="relative py-20">
         <div className="container mx-auto px-4">
           <h2 className="section-heading gradient-text">Let's Connect</h2>
-          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="glass-card p-8 rounded-2xl gradient-border glass-card-hover">
-              <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
-                    <input 
-                      type="text" 
-                      id="name" 
-                      className="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent"
-                      placeholder="Your name"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
-                    <input 
-                      type="email" 
-                      id="email" 
-                      className="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent"
-                      placeholder="your.email@example.com"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium mb-2">Subject</label>
-                  <input 
-                    type="text" 
-                    id="subject" 
-                    className="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent"
-                    placeholder="Project inquiry / Job opportunity"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
-                  <textarea 
-                    id="message" 
-                    rows={5} 
-                    className="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent"
-                    placeholder="Tell me about your project or inquiry..."
-                  ></textarea>
-                </div>
-                <button type="submit" className="primary-button w-full">
-                  Send Message
-                </button>
-              </form>
-            </div>
+          <div className="max-w-3xl mx-auto">
             <div className="space-y-8">
               <div className="glass-card p-8 rounded-2xl gradient-border glass-card-hover h-auto">
-                <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
+                <h3 className="text-2xl font-bold mb-6 text-center">Contact Information</h3>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="w-10 h-10 rounded-full bg-sky-100 dark:bg-sky-900/30 flex items-center justify-center text-sky-500 flex-shrink-0">
@@ -501,15 +522,15 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-lg">Location</h4>
-                      <p className="text-slate-600 dark:text-slate-400">Manado, Indonesia</p>
+                      <p className="text-slate-600 dark:text-slate-400">Jakarta, Indonesia</p>
                       <p className="text-slate-600 dark:text-slate-400 text-sm">Available for remote work worldwide</p>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="glass-card p-8 rounded-2xl gradient-border glass-card-hover">
-                <h3 className="text-2xl font-bold mb-6">Connect On Social Media</h3>
-                <div className="grid grid-cols-2 gap-4">
+                <h3 className="text-2xl font-bold mb-6 text-center">Connect On Social Media</h3>
+                <div className="flex flex-wrap justify-center gap-4">
                   <a href="https://github.com/Jerly08" target="_blank" rel="noopener noreferrer" 
                      className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
                     <svg className="w-6 h-6 text-slate-700 dark:text-slate-300" fill="currentColor" viewBox="0 0 24 24">
