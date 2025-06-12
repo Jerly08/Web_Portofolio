@@ -107,14 +107,26 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Animated Illustration/Avatar */}
+            {/* Professional Photo */}
             <div className="relative hidden lg:block">
               <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-sky-500/10 to-indigo-500/10 rounded-full blur-3xl" />
               <div className="relative w-full aspect-square rounded-full border-2 border-sky-200/30 dark:border-sky-700/30 overflow-hidden glass-card glow-effect">
                 <div className="absolute inset-0 bg-gradient-to-br from-sky-500/20 to-indigo-500/20" />
-                <div className="absolute inset-0 flex items-center justify-center text-8xl animate-float">
-                  👨‍💻
-                </div>
+                <div className="absolute inset-0 shadow-inner z-10"></div>
+                <Image 
+                  src="/me.jpg" 
+                  alt="Jerly Refo - Professional Photo" 
+                  className="object-cover w-full h-full"
+                  width={500}
+                  height={500}
+                  priority
+                />
+                <div className="absolute inset-0 ring-1 ring-white/20 z-10"></div>
+              </div>
+              <div className="absolute -bottom-2 -right-2 w-12 h-12 rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 flex items-center justify-center text-white shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
               </div>
             </div>
           </div>
@@ -415,6 +427,39 @@ export default function Home() {
                       <span className="px-2 py-1 rounded-full bg-white/10 text-xs">Vercel</span>
                     </div>
                     <a href="https://bkomit.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-200 font-medium flex items-center gap-1 text-sm">
+                      View Live Demo
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Trading Bot Project */}
+            <div className="project-card glass-card-hover">
+              <div className="relative h-full w-full overflow-hidden rounded-2xl">
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 opacity-20"></div>
+                <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-20 bg-center mix-blend-overlay"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent"></div>
+                <div className="relative h-full flex flex-col justify-between p-6 text-white">
+                  <div className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-lg flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                  </div>
+                  <div className="mt-auto">
+                    <span className="px-3 py-1 rounded-full bg-purple-500/20 backdrop-blur-md text-xs font-medium text-purple-300 inline-block mb-2">Financial Trading Tool</span>
+                    <h3 className="text-xl font-bold mb-2">Trading Bot Dashboard</h3>
+                    <p className="text-gray-300 mb-4 line-clamp-2">Serverless trading bot application with DMI/ADX strategy configuration, real-time webhook integration, TradingView signals, and automated order execution via Binance Testnet.</p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="px-2 py-1 rounded-full bg-white/10 text-xs">Next.js</span>
+                      <span className="px-2 py-1 rounded-full bg-white/10 text-xs">Serverless</span>
+                      <span className="px-2 py-1 rounded-full bg-white/10 text-xs">MongoDB</span>
+                      <span className="px-2 py-1 rounded-full bg-white/10 text-xs">Vercel</span>
+                    </div>
+                    <a href="https://tradingbot-project.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:text-purple-200 font-medium flex items-center gap-1 text-sm">
                       View Live Demo
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
