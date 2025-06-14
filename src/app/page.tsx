@@ -537,6 +537,74 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Experience Section */}
+      <section id="experience" className="relative py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="section-heading gradient-text">Work Experience</h2>
+          <div className="max-w-6xl mx-auto space-y-12 stagger-children">
+            
+            {/* PT Murni Solusindo Nusantara */}
+            <div className="glass-card p-8 rounded-xl gradient-border glass-card-hover">
+              <div className="flex flex-col md:flex-row gap-6">
+                <div className="w-full md:w-1/4">
+                  <div className="sticky top-8">
+                    <div className="w-16 h-16 rounded-xl bg-sky-100 dark:bg-sky-900/30 flex items-center justify-center text-sky-500 mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-bold mb-2">PT. Murni Solusindo Nusantara</h3>
+                    <p className="text-sky-500 dark:text-sky-400 font-medium mb-2">Technical Software Engineer</p>
+                    <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">May 2024 - Present</p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="px-2 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-xs">Banking Software</span>
+                      <span className="px-2 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-xs">ATM/CDM Systems</span>
+                      <span className="px-2 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-xs">Windows/Linux</span>
+                      <span className="px-2 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-xs">System Integration</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-full md:w-3/4">
+                  <div className="space-y-6">
+                    <div>
+                      <h4 className="text-lg font-semibold mb-3">Key Responsibilities</h4>
+                      <ul className="list-disc pl-5 space-y-2 text-slate-600 dark:text-slate-400">
+                        <li>Install, configure, and deploy software on ATM Cash Deposit Machines (CDM) at client locations including major banks (BCA, BNI, BRI, Danamon, Adira)</li>
+                        <li>Integrate software with client banking systems in accordance with security standards and established procedures</li>
+                        <li>Perform functionality testing post-deployment to ensure machines operate properly and meet client requirements</li>
+                        <li>Provide training to client operational teams on CDM usage and basic troubleshooting procedures</li>
+                        <li>Create comprehensive documentation of deployment processes, configurations, and test results for internal purposes and client reporting</li>
+                        <li>Identify and resolve technical issues during deployment and post-implementation phases</li>
+                        <li>Coordinate with internal teams (developers, support staff, project managers) and client stakeholders to ensure smooth deployment processes</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold mb-3">Key Achievements</h4>
+                      <ul className="list-disc pl-5 space-y-2 text-slate-600 dark:text-slate-400">
+                        <li>Successfully deployed software on hundreds of ATM CDM units across multiple locations for major banking clients</li>
+                        <li>Maintained high client satisfaction levels through prompt and effective problem resolution</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold mb-3">Technical Skills</h4>
+                      <ul className="list-disc pl-5 space-y-2 text-slate-600 dark:text-slate-400">
+                        <li>Proficient in Windows/Linux-based software installation and configuration</li>
+                        <li>In-depth understanding of ATM/CDM systems and core banking integration</li>
+                        <li>Strong hardware and software troubleshooting capabilities</li>
+                        <li>Excellent communication skills with both internal teams and external clients</li>
+                        <li>Detail-oriented technical documentation expertise</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Add more experience items here */}
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="relative py-20">
         <div className="container mx-auto px-4">
@@ -648,6 +716,7 @@ export default function Home() {
                   <a href="#about" className="block text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors">About</a>
                   <a href="#skills" className="block text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors">Skills</a>
                   <a href="#projects" className="block text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors">Projects</a>
+                  <a href="#experience" className="block text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors">Experience</a>
                   <a href="#contact" className="block text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors">Contact</a>
                 </div>
               </div>
